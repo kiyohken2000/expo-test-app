@@ -5,6 +5,7 @@ import { colors } from 'theme'
 import { useNavigation } from '@react-navigation/native'
 import { UserContext } from '../../contexts/UserContext'
 import ScreenTemplate from '../../components/ScreenTemplate'
+import AuthButton from '../../components/AuthButton'
 
 export default function Home() {
   const navigation = useNavigation()
@@ -59,6 +60,8 @@ export default function Home() {
             navigation.navigate('Menu')
           }}
         />
+        <View style={{paddingVertical: 10}} />
+        <AuthButton />
       </View>
     </ScreenTemplate>
   )
