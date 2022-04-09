@@ -38,7 +38,7 @@ export default function AuthButton() {
       style={styles.button}
       onPress={() => onButtonPress()}
     >
-      <Text style={styles.label}>認証</Text>
+      <Text style={styles.label}>Face ID 認証</Text>
     </TouchableOpacity>
   )
 }

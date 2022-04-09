@@ -25,7 +25,13 @@
         "NSPhotoLibraryUsageDescription": "Use the photo library to change your avatar.",
         "NSFaceIDUsageDescription": "use face id to local authenticate"
       },
-      "userInterfaceStyle": "automatic"
+      "userInterfaceStyle": "automatic",
+      "usesAppleSignIn": true,
+      "config": {
+        "googleSignIn": {
+          "reservedClientId": "com.googleusercontent.apps.852442919227-r196bdcg2kts1rf910i1gml4voctjm6j"
+        }
+      }
     },
     "android": {
       "package": "expo.test.app",

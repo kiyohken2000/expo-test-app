@@ -6,6 +6,9 @@ import { useNavigation } from '@react-navigation/native'
 import { UserContext } from '../../contexts/UserContext'
 import ScreenTemplate from '../../components/ScreenTemplate'
 import AuthButton from '../../components/AuthButton'
+import SignInWithAppleButton from '../../components/SignInWithAppleButton'
+import SignInWithGoogleButton from '../../components/SignInWithGoogleButton'
+import SignInWithTwitterButton from '../../components/SignInWithTwitterButton'
 
 export default function Home() {
   const navigation = useNavigation()
@@ -62,6 +65,11 @@ export default function Home() {
         />
         <View style={{paddingVertical: 10}} />
         <AuthButton />
+        <View style={{paddingVertical: 10}} />
+        <SignInWithAppleButton />
+        <View style={{paddingVertical: 10}} />
+        <SignInWithGoogleButton />
+        <View style={{paddingVertical: 10}} />
       </View>
     </ScreenTemplate>
   )
